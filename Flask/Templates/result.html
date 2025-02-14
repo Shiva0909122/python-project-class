@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result</title>
+</head>
+
+<body>
+    <h1>Student Result</h1>
+    <ul>
+        {% for key, value in result.items() %}
+            <li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+<h2>
+    {% for key, value in result.items() %}
+    <p>{{ key }}: <span>{{ value }}</span> </p>
+    {% endfor %}
+</h2>
+
+
+    
+    <table border="1">
+        {% for key, value in result.items() %}
+        <tr>
+            <th>{{ key }}:</th>
+            <th>{{ value }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Go Back</a>
+</body>
+
+</html>

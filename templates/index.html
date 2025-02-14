@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Management</title>
+  </head>
+  <body>
+    <h1>Contact Management</h1>
+
+    <h2>Add Contact</h2>
+    <form action="/add" method="POST">
+      <input type="text" name="name" placeholder="Enter Name" required /><br />
+      <input
+        type="text"
+        name="phone"
+        placeholder="Enter Phone Number"
+        required
+      /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter Email"
+        required
+      /><br />
+      <button type="submit">Add Contact</button>
+    </form>
+
+    <h2>Search Contact</h2>
+    <form action="/search" method="POST">
+      <input
+        type="text"
+        name="name"
+        placeholder="Enter Name to Search"
+        required
+      /><br />
+      <button type="submit">Search</button>
+    </form>
+
+    {% if search_result %}
+    <h3>Search Result:</h3>
+    <p>Name: {{ search_result }}</p>
+    <p>Phone: {{ search_result['Phone'] }}</p>
+    <p>Email: {{ search_result['Email'] }}</p>
+    {% else %}
+    <p>No contact found!</p>
+    {% endif %}
+
+    <h2>All Contacts</h2>
+    {% if contacts %}
+    <ul>
+      {% for name, details in contacts.items() %}
+      <li>
+        {{ name }} - Phone: {{ details['Phone'] }}, Email: {{ details['Email']
+        }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No contacts available!</p>
+    {% endif %}
+  </body>
+</html>

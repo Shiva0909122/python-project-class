@@ -1,0 +1,1 @@
+'ve added a heading for the note description, included a date and time display that updates in real time, and ensured a better UI/UX. Let me know if you need a reminder feature as well! 

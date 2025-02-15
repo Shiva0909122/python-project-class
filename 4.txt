@@ -1,0 +1,1 @@
+1. Now, you can save multiple notes with different titles. When saving or loading a note, you'll be prompted to enter a title. Let me know if you need any further improvements!

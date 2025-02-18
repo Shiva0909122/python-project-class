@@ -1,6 +1,10 @@
 # 💰 Expense Tracker Application
 
-This is a desktop-based Expense Tracker built using **Tkinter** for the GUI, **Pandas** for data management, and **Matplotlib** for visualizations. It helps you track expenses by category and date, and generates insightful reports with expenses displayed inside the bars for better visualization. All expenses are saved locally using a CSV file, ensuring your data persists even after closing the app.
+This is a desktop-based Expense Tracker built using **Tkinter** for the GUI, 
+**Pandas** for data management, and **Matplotlib** for visualizations.
+ It helps you track expenses by category and date, and generates insightful reports with expenses 
+ displayed inside the bars for better visualization. All expenses are saved locally using a CSV file,
+ ensuring your data persists even after closing the app.
 
 ---
 

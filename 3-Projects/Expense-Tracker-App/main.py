@@ -98,14 +98,14 @@ def generate_report():
 root = tk.Tk()
 root.title("Expense Tracker 💰")
 root.geometry("450x450")
-root.configure(bg="#2C3E50")
+root.configure(bg="#106dc9")
 
 # Main Frame
 main_frame = tk.Frame(root, bg="#34495E", padx=20, pady=20)
 main_frame.pack(expand=True, fill='both')
 
 # UI Elements
-tk.Label(main_frame, text="Description:", fg="white", bg="#34495E", font=("Helvetica", 12)).grid(row=0, column=0, sticky="w", pady=5)
+tk.Label(main_frame, text="Description:", fg="white", bg="#34495E", font=("Inter", 12)).grid(row=0, column=0, sticky="w", pady=5)
 description_entry = tk.Entry(main_frame, width=30)
 description_entry.grid(row=0, column=1, pady=5)
 
@@ -116,7 +116,7 @@ amount_entry.grid(row=1, column=1, pady=5)
 tk.Label(main_frame, text="Category:", fg="white", bg="#34495E", font=("Helvetica", 12)).grid(row=2, column=0, sticky="w", pady=5)
 category_var = tk.StringVar(root)
 category_var.set("Food")
-category_menu = ttk.Combobox(main_frame, textvariable=category_var, values=["Food", "Transport", "Bills", "Entertainment", "Others"], state="readonly")
+category_menu = ttk.Combobox(main_frame, textvariable=category_var, values=["Food", "Transport", "Bills", "Entertainment", "Shopping ", "Others"], state="readonly")
 category_menu.grid(row=2, column=1, pady=5)
 
 tk.Label(main_frame, text="Date:", fg="white", bg="#34495E", font=("Helvetica", 12)).grid(row=3, column=0, sticky="w", pady=5)
